@@ -1,0 +1,36 @@
+# x4TestBench:
+# Class Description Notes
+# -------------------------------------------------------------------------------------------------------------------- #
+class_name: 'x4TestBench'
+class_version: 1.0.0
+class_description: 'A base class for the automation of x4 testing. Currently standalone, but will be integrated into the E2E ATE framework package in the future.'
+test_mode: 'Stand Alone'
+# -------------------------------------------------------------------------------------------------------------------- #
+
+# X4 Test Bench Component Definitions:
+# -------------------------------------------------------------------------------------------------------------------- #
+components:
+    # Serial Port Configurations: (Configure these settings in the x4_serial_port.yml file found in config path listed below)
+    # ---------------------------------------------------------------------------------------------------------- #
+    x4_serial_port:
+      class_name: 'x4SerialPort'
+      name: 'x4_serial_port'
+      config_path: '/x4_standalone/x4_bsp/x4_serial_port/x4_serial_port.yml'
+    # ---------------------------------------------------------------------------------------------------------- #
+
+    # CRC Generator Configurations: (Configure these settings in the crc_generator.yml file found in config path listed below)
+    # ---------------------------------------------------------------------------------------------------------- #
+    crc_generator:
+        class_name: 'CrcGenerator'
+        name: 'crc_generator'
+        config_path: '/x4_standalone/x4_bsp/crc_generator/crc_generator.yml'
+    # ---------------------------------------------------------------------------------------------------------- #
+
+    # UART Command Configurations: (Configure these settings in the x4_cmds.yml file found in config path listed below)
+    # ---------------------------------------------------------------------------------------------------------- #
+    x4_cmds:
+        class_name: 'x4Cmds'
+        name: 'x4_cmds'
+        config_path: '/x4_standalone/x4_bsp/x4_cmds/x4_cmds.yml'
+    # ---------------------------------------------------------------------------------------------------------- #
+# -------------------------------------------------------------------------------------------------------------------- #

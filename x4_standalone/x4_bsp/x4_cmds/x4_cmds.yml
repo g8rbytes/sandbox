@@ -1,0 +1,91 @@
+# x4Cmds:
+# Class Description Notes
+# -------------------------------------------------------------------------------------------------------------------- #
+class_name: 'x4Cmds'
+class_version: 1.0.0
+class_description: 'Maps/defines byte values to more readable/usable command objects.'
+# -------------------------------------------------------------------------------------------------------------------- #
+
+# X4 UART Command Mapping:
+# -------------------------------------------------------------------------------------------------------------------- #
+attributes:
+  # Read Commands
+  rd_status_cmd:
+    name: 'RD_STATUS'
+    len: 0x02
+    len_byte: 0xA2
+    cmd_code: 0x01
+
+  rd_data_cmd:
+    name: 'RD_DATA'
+    len: 0x02
+    len_byte: 0xA2
+    cmd_code: 0x02
+
+  rd_version_cmd:
+    name: 'RD_VERSION'
+    len: 0x02
+    len_byte: 0xA2
+    cmd_code: 0x03
+
+  # Write Commands
+  wr_eev_move_rel_cmd:
+    name: 'WR_EEV_MOVE_REL'
+    len: 0x05
+    len_byte: 0xA5
+    cmd_code: 0x1A
+
+  wr_eev_move_abs_cmd:
+    name: 'WR_EEV_MOVE_ABS'
+    len: 0x05
+    len_byte: 0xA5
+    cmd_code: 0x1B
+
+  wr_eev_move_home_cmd:
+    name: 'WR_EEV_MOVE_HOME'
+    len: 0x03
+    len_byte: 0xA3
+    cmd_code: 0x1C
+
+  wr_eev_move_stop_cmd:
+    name: 'WR_EEV_MOVE_STOP'
+    len: 0x03
+    len_byte: 0xA3
+    cmd_code: 0x1D
+
+  wr_eev_set_pos_cmd:
+    name: 'WR_EEV_SET_POS'
+    len: 0x05
+    len_byte: 0xA5
+    cmd_code: 0x20
+
+  wr_fan_pwm_cmd:
+    name: 'WR_FAN_PWM'
+    len: 0x05
+    len_byte: 0xA5
+    cmd_code: 0x21
+
+  wr_heater_relay_enable_cmd:
+    name: 'WR_HEATER_RELAY_ENABLE'
+    len: 0x03
+    len_byte: 0xA3
+    cmd_code: 0x22
+
+  wr_heater_relay_disable_cmd:
+    name: 'WR_HEATER_RELAY_DISABLE'
+    len: 0x03
+    len_byte: 0xA3
+    cmd_code: 0x23
+
+  wr_all_stop_cmd:
+    name: 'WR_ALL_STOP'
+    len: 0x02
+    len_byte: 0xA2
+    cmd_code: 0x24
+
+  reset_cmd:
+    name: 'RESET'
+    len: 0x02
+    len_byte: 0xA2
+    cmd_code: 0x25
+  # ------------------------------------------------------------------------------------------------------------------ #

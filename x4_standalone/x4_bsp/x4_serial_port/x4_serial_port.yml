@@ -1,0 +1,14 @@
+# x4SerialPort:
+# Class Description Notes
+# ------------------------------------------------------------------------------------------------------------------ #
+class_name: 'x4SerialPort'
+class_version: 1.0.0
+class_description: 'A serial port class for x4. Re-uses pyserial class with options for overriding later.'
+# ------------------------------------------------------------------------------------------------------------------ #
+
+# Serial Port Class Configurations:
+# ------------------------------------------------------------------------------------------------------------------ #
+attributes:
+  com_port: '/dev/cu.wlan-debug'       # Replace with your COM port
+  baudrate: 9600                       # Set the baud rate
+# ------------------------------------------------------------------------------------------------------------------ #
